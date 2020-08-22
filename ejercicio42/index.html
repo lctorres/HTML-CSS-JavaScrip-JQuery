@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<!-- Instrucciones
+Al igual que en el ejercicio 1, en esta ocasión también se usarán las facilidades que brinda la
+librería jQuery UI. Para esto, se debe crear una página web que contenga lo siguiente:
+- Un título en la parte superior que se pueda desplazar libremente gracias a la acción del
+ratón.
+- Debe tener un grupo de cuatro pestañas, en donde cada una tendrá una parte de una
+historia narrada por el programador. Por defecto se debe mostrar la primera pestaña.
+- Una casilla de selección y un botón. En la casilla deben estar especificados niveles de
+evaluación de la historia, y presionando el botón se enviará un mensaje de alerta que
+indique la calificación que el usuario le asignó a la historia. Para esta casilla de selección se
+pide usar la herramienta SelectMenu de jQueryUI.
+Considere que el sitio debe tener un estilo adecuado, por lo cual se pide considerar estilos
+apropiados en un archivo diferente al del sitio. Además, todas aquellas funciones provenientes
+de Javascript o jQuery, deben estar incluidas en un archivo adicional de extensión js.
+La dirección para obtener el plugin es https://jqueryui.com/ -->
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio Individual 29</title>
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/script.js"></script>
+</head>
+
+<body>
+    <div id="movible">
+        <h1>Crónicas Marcianas</h1>
+    </div>
+
+    <div id="pestanas">
+        <ul>
+            <li><a href="#pestana1">Página 1</a></li>
+            <li><a href="#pestana2">Página 2</a></li>
+            <li><a href="#pestana3">Página 3</a></li>
+            <li><a href="#pestana4">Página 4</a></li>
+        </ul>
+        <div id="pestana1">
+            <p>ENERO DE 1999</p>
+            <h3>El verano del cohete</h3>
+            <p> Un minuto antes era invierno en Ohio; las puertas y las ventanas estaban
+                cerradas, la escarcha empañaba los vidrios, el hielo adornaba los bordes de los
+                techos, los niños esquiaban en las laderas; las mujeres, envueltas en abrigos de
+                piel, caminaban torpemente por las calles heladas como grandes osos negros.
+            </p>
+            <p>
+                Y de pronto, una larga ola de calor atravesó el pueblo; una marea de aire tórrido,
+                como si alguien hubiera abierto de par en par la puerta de un horno. El calor latió
+                entre las casas, los arbustos, los niños. El hielo se desprendió de los techos, se
+                quebró, y empezó a fundirse. Las puertas se abrieron; las ventanas se levantaron;
+                los niños se quitaron las ropas de lana; las mujeres se despojaron de sus disfraces
+                de osos; la nieve se derritió, descubriendo los viejos y verdes prados del último
+                verano.
+            </p>
+            <p>
+                El verano del cohete. Las palabras corrieron de boca en boca por las casas
+                abiertas y ventiladas. El verano del cohete. El caluroso aire desértico alteró los
+                dibujos de la escarcha en los vidrios, borrando la obra de arte. Esquíes y trineos
+                fueron de pronto inútiles. La nieve, que venía de los cielos helados, llegaba al
+                suelo como una lluvia cálida. El verano del cohete. La gente se asomaba a los
+                porches húmedos y observaba el cielo, cada vez más rojo. El cohete, instalado en
+                su plataforma, lanzaba rosadas nubes de fuego y calor. El cohete, de pie en la fría
+                mañana de invierno, engendraba el estío con el aliento de sus poderosos escapes.
+                El cohete creaba el buen tiempo, y durante unos instantes fue verano en la tierra...
+            </p>
+            <p>FEBRERO DE 1999</p>
+            <h3>YLLA</h3>
+            <p>
+                Tenían en el planeta Marte, a orillas de un mar seco, una casa de columnas de
+                cristal, y todas las mañanas se podía ver a la señora K mientras comía la fruta
+                dorada que brotaba de las paredes de cristal, o mientras limpiaba la casa con
+                puñados de un polvo magnético que recogía la suciedad y luego se dispersaba en
+                el viento cálido. A la tarde, cuando el mar fósil yacía inmóvil y tibio, y las viñas se
+                erguían tiesamente en los patios, y en el distante y recogido pueblito marciano
+                nadie salía a la calle, se podía ver al señor K en su cuarto, que leía un libro de
+                metal con jeroglíficos en relieve, sobre los que pasaba suavemente la mano como
+                quien toca el arpa. Y del libro, al contacto de los dedos, surgía un canto, una voz
+                antigua y suave que hablaba del tiempo en que el mar bañaba las costas con vapores rojos y los hombres
+                lanzaban al combate nubes de insectos metálicos y
+                arañas eléctricas.
+            </p>
+        </div>
+        <div id="pestana2">
+            <p>El señor K y su mujer vivían desde hacía ya veinte años a orillas del mar
+                muerto, en la misma casa en que habían vivido sus antepasados, y que giraba y
+                seguía el curso del sol, como una flor, desde hacía diez siglos.
+            </p>
+            <p>
+                El señor K y su mujer no eran viejos. Tenían la tez clara, un poco parda, de casi
+                todos los marcianos; los ojos amarillos y rasgados, las voces suaves y musicales.
+                En otro tiempo habían pintado cuadros con fuego químico, habían nadado en
+                los canales, cuando corría por ellos el licor verde de las viñas y habían hablado
+                hasta el amanecer, bajo los azules retratos fosforescentes, en la sala de las
+                conversaciones.
+            </p>
+            <p>
+                Ahora no eran felices.
+            </p>
+            <p>
+                Aquella mañana, la señora K, de pie entre las columnas, escuchaba el hervor
+                de las arenas del desierto, que se fundían en una cera amarilla, y parecían fluir
+                hacia el horizonte.
+            </p>
+            <p>Algo iba a suceder. </p>
+            <p>La señora K esperaba. </p>
+            <p>
+                Miraba el cielo azul de Marte, como si en cualquier momento pudiera
+                encogerse, contraerse, y arrojar sobre la arena algo resplandeciente y maravilloso.
+            </p>
+            <p>
+                Nada ocurría.
+            </p>
+            <p>
+                Cansada de esperar, avanzó entre las húmedas columnas. Una lluvia suave
+                brotaba de los acanalados capiteles, caía suavemente sobre ella y refrescaba el
+                aire abrasador. En estos días calurosos, pasear entre las columnas era como
+                pasear por un arroyo. Unos frescos hilos de agua brillaban sobre los pisos de la
+                casa. A lo lejos oía a su marido que tocaba el libro, incesantemente, sin que los
+                dedos se le cansaran jamás de las antiguas canciones. Y deseó en silencio que él
+                volviera a abrazarla y a tocarla, como a una arpa pequeña, pasando tanto tiempo
+                junto a ella como el que ahora dedicaba a sus increíbles libros.
+            </p>
+            <p>
+                Pero no. Meneó la cabeza y se encogió imperceptiblemente de hombros. Los
+                párpados se le cerraron suavemente sobre los ojos amarillos. El matrimonio nos
+                avejenta, nos hace rutinarios, pensó.
+            </p>
+            <p>Se dejó caer en una silla, que se curvó para recibirla, y cerró fuerte y
+                nerviosamente los ojos.
+            </p>
+            <p>
+                Y tuvo el sueño.
+            </p>
+            <p>
+                Los dedos morenos temblaron y se alzaron, crispándose en el aire.
+            </p>
+            <p>
+                Un momento después se incorporó, sobresaltada, en su silla. Miró vivamente a
+                su alrededor, como si esperara ver a alguien, y pareció decepcionada. No había
+                nadie entre las columnas.
+            </p>
+            <p>
+                El señor K apareció en una puerta triangular
+            </p>
+            - ¿Llamaste? - preguntó, irritado.
+            <p>- No - dijo la señora K.</p>
+            <p>- Creí oírte gritar.</p>
+            <p>- ¿Grité? Descansaba y tuve un sueño.</p>
+            <p>- ¿Descansabas a esta hora? No es tu costumbre.</p>
+            <p>La señora K seguía sentada, inmóvil, como si el sueño, le hubiese golpeado el
+                rostro.</p>
+            <p>- Un sueño extraño, muy extraño - murmuró.</p>
+
+        </div>
+        <div id="pestana3">
+            <p>- Ah.</p>
+            <p>Evidentemente, el señor K quería volver a su libro.</p>
+            <p>- Soñé con un hombre - dijo su mujer</p>
+            <p>- ¿Con un hombre?</p>
+            <p>- Un hombre alto, de un metro ochenta de estatura</p>
+            <p>- Qué absurdo. Un gigante, un gigante deforme.</p>
+            <p>- Sin embargo... - replicó la señora K buscando las palabras -. Y... ya sé que
+                creerás que soy una tonta, pero... ¡tenía los ojos azules!</p>
+            <p> - ¿Ojos azules? ¡Dioses! - exclamó el señor K - ¿Qué soñarás la próxima vez?
+                Supongo que los cabellos eran negros.</p>
+            <p> - ¿Cómo lo adivinaste? - preguntó la señora K excitada.</p>
+            <p>El señor K respondió fríamente:</p>
+            <p>- Elegí el color más inverosímil.</p>
+            <p>- ¡Pues eran negros! - exclamó su mujer -. Y la piel, ¡blanquísima! Era muy
+                extraño. Vestía un uniforme raro. Bajó del cielo y me habló amablemente.</p>
+            <p>- ¿Bajó del cielo? ¡Qué disparate!</p>
+            <p>- Vino en una cosa de metal que relucía a la luz del sol - recordó la señora K, y
+                cerró los ojos evocando la escena -. Yo miraba el cielo y algo brilló como una
+                moneda que se tira al aire y de pronto creció y descendió lentamente. Era un
+                aparato plateado, largo y extraño. Y en un costado de ese objeto de plata se abrió
+                una puerta y apareció el hombre alto.</p>
+            <p>- Si trabajaras un poco más no tendrías esos sueños tan tontos.</p>
+            <p>- Pues a mí me gustó - dijo la señora K reclinándose en su silla -. Nunca creí
+                tener tanta imaginación. ¡Cabello negro, ojos azules y tez blanca! Un hombre
+                extraño, pero muy hermoso.</p>
+            <p> - Seguramente tu ideal.</p>
+            <p>- Eres antipático. No me lo imaginé deliberadamente, se me apareció mientras
+                dormitaba. Pero no fue un sueño, fue algo tan inesperado, tan distinto...
+                El hombre me miró y me dijo: «Vengo del tercer planeta. Me llamo Nathaniel
+                York...»</p>
+            <p>- Un nombre estúpido. No es un nombre.</p>
+            <p>- Naturalmente, es estúpido porque es un sueño - explicó la mujer suavemente -
+                . Además me dijo: «Este es el primer viaje por el espacio. Somos dos en mi nave;
+                yo y mi amigo Bart.»</p>
+            <p>- Otro nombre estúpido.</p>
+            <p>- Y luego dijo: «Venimos de una ciudad de la Tierra; así se llama nuestro
+                planeta.» Eso dijo, la Tierra. Y hablaba en otro idioma. Sin embargo yo lo entendía
+                con la mente. Telepatía, supongo.</p>
+            <p>El señor K se volvió para alejarse; pero su mujer lo detuvo, llamándolo con una
+                voz muy suave.</p>
+            <p>- ¿Yll? ¿Te has preguntado alguna vez... bueno, si vivirá alguien en el tercer
+                planeta?</p>
+            <p>- En el tercer planeta no puede haber vida - explicó pacientemente el señor K -
+                Nuestros hombres de ciencia han descubierto que en su atmósfera hay demasiado
+                oxígeno.</p>
+            <p>- Pero, ¿no sería fascinante que estuviera habitado? ¿Y que sus gentes
+                viajaran por el espacio en algo similar a una nave? </p>
+        </div>
+        <div id="pestana4">
+            <p>- Bueno, Ylla, ya sabes que detesto los desvaríos sentimentales. Sigamos
+                trabajando.</p>
+            <p>Caía la tarde, y mientras se paseaba por entre las susurrantes columnas de
+            lluvia, la señora K se puso a cantar. Repitió la canción, una y otra vez.</p>
+            <p>- ¿Qué canción es ésa? - le preguntó su marido, interrumpiéndola, mientras se
+            acercaba para sentarse a la mesa de fuego.</p>
+            <p>La mujer alzó los ojos y sorprendida se llevó una mano a la boca.</p>
+            <p>- No sé.</p>
+            <p>El sol se ponía. La casa se cerraba, como una flor gigantesca. Un viento sopló
+            entre las columnas de cristal. En la mesa de fuego, el radiante pozo de lava
+            plateada se cubrió de burbujas. El viento movió el pelo rojizo de la señora K y le
+            murmuró suavemente en los oídos. La señora K se quedó mirando en silencio, con
+            ojos amarillos, húmedos y dulces a el lejano y pálido fondo del mar, como si
+            recordara algo.</p>
+            <p>- Drink to me with thine eyes, and I will pledge with mine (Brinda por mí con tus
+            ojos y yo te prometeré con los míos) - cantó lenta y suavemente, en voz baja -. Or
+            leave a kiss within the cup, and I'll not ask for wine. (O deja un beso en tu copa y
+            no pediré vino.)</p>
+            <p>Cerró los ojos y susurró moviendo muy levemente las manos. Era una canción
+            muy hermosa.</p>
+            <p>- Nunca oí esa canción. ¿Es tuya? - le preguntó el señor K mirándola fijamente.</p>
+            <p>- No. Sí... No sé - titubeó la mujer -. Ni siquiera comprendo las palabras. Son de
+            otro idioma.</p>
+            <p>- ¿Qué idioma?</p>
+            <p>La señora K dejó caer, distraídamente, unos trozos de carne en el pozo de lava.</p>
+            <p>- No lo sé.</p>
+            <p>Un momento después sacó la carne, ya cocida, y se la sirvió a su marido.</p>
+            <p>- Es una tontería que he inventado, supongo. No sé por qué.</p>
+            <p>El señor K no replicó. Observó cómo su mujer echaba unos trozos de carne en
+            el pozo de fuego siseante. El sol se había ido. Lenta, muy lentamente, llegó la
+            noche y llenó la habitación, inundando a la pareja y las columnas, como un vino
+            oscuro que subiera hasta el techo. Sólo la encendida lava de plata iluminaba los
+            rostros.</p>
+            <p>La señora K tarareó otra vez aquella canción extraña.</p>
+            <p>El señor K se incorporó bruscamente y salió irritado de la habitación.</p>
+            <p>Más tarde, solo, el señor K terminó de cenar.</p>
+            <p>Se levantó de la mesa, se desperezó, miró a su mujer y dijo bostezando:</p>
+            <p>- Tomemos los pájaros de fuego y vayamos a entretenernos a la ciudad.</p>
+            <p>- ¿Hablas seriamente? - le preguntó su mujer -. ¿Te sientes bien?</p>
+            <p>- ¿Por qué te sorprendes?</p>
+            <p>- No vamos a ninguna parte desde hace seis meses.</p>
+            <p>- Creo que es una buena idea.</p>
+            <p>- De pronto eres muy atento.</p>
+            <p>- No digas esas cosas - replicó el señor K disgustado -. ¿Quieres ir o no?</p>
+            <p style="text-align: right;">...Continuará</p>
+        </div>
+    </div>
+    <div class="opciones">
+        <p>Queremos saber tu opinión</p>
+        <form action="#">
+            <fieldset>
+                <label for="calificacion">Qué te pareció la historia?</label>
+                <select name="calificacion" id="calificacion">
+                    <option>Pulenta</option>
+                    <option>Ahí nomás</option>
+                    <option>Charcha</option>
+                </select>
+            </fieldset>
+        </form>
+    </div>
+
+<div class="widget">
+    <input type="submit" value="Enviar Calificación">
+</div>
+
+</body>
+
+</html>

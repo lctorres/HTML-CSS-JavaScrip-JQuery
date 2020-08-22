@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Conversión de divisas</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/estilos.css">
+    <script type="text/javascript" src="js/divisas.js"></script>
+</head>
+<body>
+    <h1>Conversor de Divisas</h1>
+       <p>Esta pagina tiene como finalidad ayudar al usuario a realizar conversiones de peso chileno CLP a otras monedas.</p>
+    <div id="peso">
+        <div class="col1">Peso Chilenos:</div>
+        <div class="col1">
+            <input type="text" id="txtPeso" size="15" maxlength="10" placeholder="pesos chilenos">
+        </div>
+    </div>
+    <div id="divisa">
+        <div class="col2">
+            <input type="radio" value="1" id="dolar" name="divisas"><label>US$</label>
+            <input type="radio" value="2" id="euro" name="divisas"><label>€</label>
+            <input type="radio" value="3" id="mexico" name="divisas"><label>MX$</label>
+            <input type="radio" value="4" id="yen" name="divisas"><label>YEN</label>
+            <input type="radio" value="5" id="argentina" name="divisas"><label>AR$</label>
+        </div>
+    </div>
+    <div id="procesamiento">
+        <div class="col2">
+            <input type="button" value="Calcular" onclick="convertir()">
+        </div>
+    </div>
+    <div id="resultado">
+        <div class="col1">Resultado:</div>
+        <div class="col1">
+            <input type="text" id="txtResultado" size="15" readonly>
+        </div>
+    </div>
+    <div id="mensaje"></div>
+</body>
+
+</html>

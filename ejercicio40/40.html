@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chile vs Argentina</title>
+    <link rel="stylesheet" href="jquery-ui.css">
+
+    <script src="jquery-1.12.4.js"></script>
+    <script src="jquery-ui.js"></script>
+
+
+
+</head>
+
+<body>
+    <div id="titulo">
+        <h1>Chile vs Argentina (Final Copa America Centenario 2016) </h1>
+    </div>
+
+    <div class="container">
+        <h3>Tanda de Penales N°1</h3>
+        <div>
+            <p> 0-0: Arturo Vidal patea... ¡Tapó Romero!
+                <br>
+                0-0: Lionel Messi patea... ¡Elevó!
+            </p>
+        </div>
+        <h3>Tanda de Penales N°2</h3>
+        <div>
+            <p> 1-0: Nicolás Castillo patea... ¡Gol de Chile!
+                <br>
+                1-1: Javier Mascherano patea... ¡Gol de Argentina!</p>
+        </div>
+        <h3>Tanda de Penales N°3</h3>
+        <div>
+            <p> 2-1: Charles Aránguiz patea... ¡Gol de Chile!
+                <br>
+                2-2: Sergio Agüero patea... ¡Gol de Argentina!</p>
+        </div>
+        <h3>Tanda de Penales N°4</h3>
+        <div>
+            <p> 3-2: Jean Beausejour patea... ¡Gol de Chile!
+                <br>
+                3-2: Lucas Biglia patea... ¡Tapó Claudio Bravo!</p>
+        </div>
+        <h3>Tanda de Penales N°5</h3>
+        <div>
+            <p> 4-2: Francisco Silva patea... ¡Y Gol de Chile! ¡Gol de Chile! ¡Gol de Chile! ¡CHILE CAMPEÓN! ¡CHILE CAMPEÓN!
+                ¡CHILE CAMPEÓN! ¡CHILE CAMPEÓN! ¡CHILE CAMPEÓN!</p>
+
+            <p id="dialog">Francisco Silva patea... ¡Y Gol de Chile! ¡Gol de Chile! ¡Gol de Chile! ¡CHILE CAMPEÓN! ¡CHILE CAMPEÓN!
+                ¡CHILE CAMPEÓN! ¡CHILE CAMPEÓN! ¡CHILE CAMPEÓN!</p>
+        </div>
+    </div>
+    <br>
+    <button id="oli"> Touch me</button>
+    <script>
+        $(function () {
+            $("#titulo").resizable();
+        });
+        $(function () {
+            $(".container").accordion();
+        });
+
+        $(function () {
+            $("#dialog").dialog({
+                autoOpen: false,
+                show: {
+                    effect: "blind",
+                    duration: 1000
+                },
+                hide: {
+                    effect: "explode",
+                    duration: 1000
+                }
+            });
+
+            $("#oli").on("click", function () {
+                $("#dialog").dialog("open");
+            });
+        });
+
+    </script>
+
+
+</body>
+
+</html>

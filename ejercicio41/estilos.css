@@ -1,0 +1,52 @@
+h1{
+    margin-top: 0;
+    display: flex;
+    justify-content: center;
+    color: white;
+    text-shadow: -.3rem -0.3rem  black;
+    background-color: rgba(0, 14, 188, 0.5);
+    padding: 3rem;
+    margin-bottom: 2.5rem;
+}
+
+p{
+    display: flex;
+    justify-content: center;
+    color: rgb(3, 3, 3);
+    text-shadow: -.01rem -0.01rem  white;
+    font-size: large;
+    background-color: darkcyan;
+    padding: 1.5rem;
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.boton{
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+}
+
+a{
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+    font-size: larger;
+    margin-bottom: 1.2rem;
+    background-color: darkgreen;
+}
+
+[off-canvas]{
+    background-color: dimgrey;
+    background-image: url(imagenes/pelota.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+[canvas=container]{
+    background-image: url(imagenes/cancha.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: darkkhaki;
+}
